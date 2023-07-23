@@ -1,3 +1,4 @@
+'use client'
 import Produto from "./produto";
 
 export default function MainContainer() {

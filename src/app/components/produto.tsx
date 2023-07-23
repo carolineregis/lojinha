@@ -1,3 +1,7 @@
+'use client'
+
+import { useState } from "react";
+
 export default function Produto() {
 
   let productList = [
@@ -28,9 +32,13 @@ export default function Produto() {
 
     <div className="flex flex-row flex-wrap grid-rows-3 content-start w-full h-full">
       {productList.map( produto => {
+        function mostrarProduto() {
+          console.log(produto.name)
+        }
+
         return (
           <>
-          <div className="product-container border-slate-400 p-5">
+          <div className="product-container border-slate-400 p-5" onClick={mostrarProduto}>
           <div className="product-image-container">
             <img src="img/vapo_cam.jpg" className="product-image"></img>
           </div>

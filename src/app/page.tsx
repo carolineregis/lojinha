@@ -3,11 +3,10 @@ import Produto from './components/produto';
 import Sidebar from './components/MainContainer';
 import Header from './components/header';
 import MainContainer from './components/MainContainer';
+import ProductHighlight from './components/ProductHighlight';
 
 export default function Home() {
   return (
-
-    
     
   <>
 
@@ -20,6 +19,10 @@ export default function Home() {
         <main className="basis-1/2 row-span-2 col-span-2">
         </main>
       </div>
+
+      <>
+        <ProductHighlight></ProductHighlight>
+      </>
     </div>
 
 
